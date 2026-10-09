@@ -5,7 +5,6 @@ import com.example.demo.Model.Project;
 import com.example.demo.Repository.FlagRepository;
 import com.example.demo.exception.ConflictException;
 import com.example.demo.exception.NotFoundException;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
