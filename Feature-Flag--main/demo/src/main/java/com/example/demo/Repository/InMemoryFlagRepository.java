@@ -36,4 +36,8 @@ public class InMemoryFlagRepository implements FlagRepository {
         return store.values().stream()
                 .anyMatch(flag -> flag.getProjectId().equals(projectId) && flag.getKey().equals(key));
     }
+    @Override
+    public void deleteFlag(UUID id){
+        store.remove(id);
+    }
 }
